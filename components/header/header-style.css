@@ -1,0 +1,163 @@
+
+/******************************************/
+/*              Desktop Nav               */
+/******************************************/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+    max-width: 1500px;
+    width: 100%;
+    height: 80px;
+
+    box-shadow: 0 5px 10px -10px;
+    background-color: white;
+}
+
+
+
+/*Company logo*/
+.logo-link {
+    height: 80px;
+}
+
+.nav-bar img{
+    padding: 20px;
+    height: 40px;
+}
+
+/*Navigation Items*/
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin: 17px 10px;
+}
+
+.nav-links a{
+    font-family: mukta, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 13px;
+    color: var(--dark-font-color);
+}
+
+
+/*Desktop Specific Styles*/
+@media screen and (min-width: 768px) {
+
+    /*Nav CTA styling*/
+    .nav-cta-btn {
+        padding: 8px 24px;
+        background-color: var(--main-brand-color);
+        text-transform: uppercase;
+        font-size: 16px;
+        box-shadow: var(--btn-box-shadow-color) 0px 0px 2px;
+    }
+
+    /*.active-page {*/
+    /*    border-bottom: 3px solid var(--main-brand-color);*/
+    /*}*/
+
+    .non-active-page:hover :not(.nav-cta-btn){
+        border-bottom: 3px solid var(--main-brand-color);
+    }
+
+    /*.non-active-page:active{*/
+    /*    border-bottom: 3px solid var(--main-brand-color);*/
+    /*}*/
+}
+
+    /*Hide mobile menu items glyphs on large screens*/
+    .mobile-item-glyph {
+        display: none;
+}
+
+/******************************************/
+/*               Mobile Nav               */
+/******************************************/
+
+#mobile-nav-btn {
+    /*Button should be hidden by default on large screens*/
+    display: none;
+
+    /*Position button at top right screen*/
+    position: absolute;
+    top: 20px;
+    right: 10px;
+
+    padding: 8px 12px;
+    margin: 0 18px;
+
+    background-color: white;
+    border: 1px solid var(--btn-box-shadow-color);
+    border-radius: 2px;
+}
+
+#mobile-nav-btn:active {
+    background-color: var(--main-brand-color);
+    border: 1px solid var(--btn-box-shadow-color);
+    border-radius: 2px;
+}
+
+#mobile-nav-btn img {
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    filter: invert(11%) sepia(28%) saturate(0%) hue-rotate(259deg) brightness(100%) contrast(92%);
+}
+
+@media screen and (max-width: 768px){
+
+    /*Show mobile button on smaller screens*/
+    #mobile-nav-btn {
+        display: block;
+    }
+
+    /*Switch nav from row to column on smaller screens*/
+    /*This includes the brand logo and group of menu items*/
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /*Arrange menu items into a column*/
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        box-shadow:
+                inset 0px 39px 19px -50px #000000,
+                0px 35px 30px -45px #000000;
+        background-color: var(--main-brand-color);
+    }
+
+    /*Let menu items take up entire width*/
+    .nav-links a {
+        width: 100%;
+        padding: 0;
+    }
+
+    /*Style mobile nav items*/
+    .nav-item {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--btn-box-shadow-color);
+    }
+
+    /*Show glyphs on smaller screens*/
+    .mobile-item-glyph {
+        display: block;
+    }
+
+
+}

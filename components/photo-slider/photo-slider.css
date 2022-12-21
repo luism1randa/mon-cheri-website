@@ -1,0 +1,140 @@
+
+
+.slider-description h4 {
+    text-align: left;
+}
+
+.photo-slider {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 767px;
+    min-height: 340px;
+    gap: 6%;
+    overflow: visible;
+}
+
+.slider-description {
+    width: 48%;
+}
+
+.carousel {
+    width: 48%;
+    height: 320px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.photo-slide{
+    border: solid 10px white;
+    box-shadow: 0px 0px 35px rgba(48, 47, 45, 0.3);
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.photo-slide-left{
+    display: none;
+    z-index: 97;
+    width: 200px;
+    height: 280px;
+
+    position: absolute;
+    left: -220px;
+    right: 0;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    opacity: .3;
+}
+
+.photo-slide-center{
+    position: absolute;
+    width: 240px;
+    height: 320px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 98;
+}
+
+.photo-slide-right{
+
+    z-index: 97;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .3;
+}
+
+.slider-btn{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 50%;
+    box-shadow: 0 0 35px #2B2B2B;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slider-btn:hover{
+    cursor: pointer;
+}
+
+.next-btn{
+    position: absolute;
+    left: 228px;
+    right: 0;
+    top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prev-btn{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 228px;
+    top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .photo-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-description {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .photo-slide-left{
+        display: inline-block;
+    }
+
+    .prev-btn{
+        display: flex;
+    }
+
+
+}
+

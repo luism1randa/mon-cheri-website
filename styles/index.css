@@ -1,0 +1,156 @@
+/******************************************/
+/*              Contact Info              */
+/******************************************/
+
+    .phone-hours-address-container{
+        display: grid;
+        grid-template-columns: 1fr 2px 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .phone-hours-address-container p{
+        margin: 10px 0;
+    }
+
+    .hours {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        text-align: right;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .phone-address-hours-divider {
+        background-color: var(--secondary-brand-color);
+        width: 2px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .phone {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .phone a{
+        text-decoration: none;
+    }
+
+    .address {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-width: 767px){
+        .phone-hours-address-container{
+            width: 100%;
+        }
+
+        .phone{
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            text-align: right;
+            margin-right: 20px;
+            margin-left: 0px;
+
+
+        }
+
+        .phone-address-hours-divider{
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .address {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            text-align: left;
+            margin-right: 0px;
+            margin-left: 20px;
+
+
+        }
+
+        .hours{
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+            text-align: center;
+            margin-top: 25px;
+        }
+    }
+
+/******************************************/
+/*                Team Bio                */
+/******************************************/
+
+    /*Team Bio Structure - Desktop:
+    *   team-photo
+    *   headings
+    *   paragraph
+    */
+
+    .team-photo {
+        display: block;
+        max-width: 250px;
+        margin: 10px auto;
+        border-radius: 50%;
+        border: solid 5px white;
+        box-shadow: var(--btn-box-shadow-color) 0px 0px 10px;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .team-photo-grid{
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    .team-headers {
+        grid-column: 2 / 4;
+        grid-row: 1;
+    }
+
+    .team-headers h1, .team-headers h4 {
+        text-align: left;
+    }
+
+    .team-paragraph {
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+
+    /*Team Bio Structure - Mobile:
+    *   headings
+    *   team-photo
+    *   paragraph
+    */
+    @media screen and (max-width: 767px){
+        .team-photo-grid{
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .team-headers {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+
+        .team-headers h1, .team-headers h4 {
+            text-align: center;
+        }
+
+        .team-paragraph {
+            grid-column: 1 / 4;
+            grid-row: 3;
+        }
+    }

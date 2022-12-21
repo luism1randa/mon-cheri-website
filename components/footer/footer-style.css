@@ -1,0 +1,195 @@
+/*
+File name: footer-style.css
+Author: Luis Miranda
+
+This file contains the styles for the footer. This file
+assumes that colors, typography, and body box model
+are taken from the main.css theme at the parent
+styles directory.*/
+
+/******************************************/
+/*            Footer Defaults             */
+/******************************************/
+
+    footer {
+        min-height: 220px;
+        padding: 50px 30px;
+        background-color: var(--footer-bg-color);
+        color: var(--footer-faded-font-color);
+    }
+
+    footer p {
+        color: var(--footer-faded-font-color);
+    }
+
+    footer a {
+        color: var(--footer-faded-font-color);
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        /*Decrease text size on smaller screens*/
+        footer p {
+            font-size: 14px;
+        }
+    }
+
+/******************************************/
+/*              Footer Content            */
+/******************************************/
+
+    /*The footer is split into three columns
+    on large screens: site map | logo/social
+    icons | contact info
+
+    There is a final section after the columns
+    for credit and attributions if needed*/
+
+    .footer-content-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 768px){
+        .footer-content-container {
+            flex-direction: column;
+        }
+    }
+
+    /******************************************/
+    /*           Site Map (Left Column)       */
+    /******************************************/
+
+        .footer-site-map-links {
+            width: 20%;
+        }
+
+        .footer-site-map-links ul {
+            list-style: none;
+        }
+
+        .footer-site-map-links ul>li:first-child {
+            font-weight: 600;
+        }
+
+        .footer-site-map-links a{
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 768px){
+
+            /*Hide site map on small screens*/
+            .footer-site-map-links {
+                display: none;
+            }
+        }
+
+    /******************************************/
+    /*  Brand Logo and Icons (Center Column)  */
+    /******************************************/
+
+        /*Brand logo and social icons are arranged
+        in a column layout in the middle of the footer*/
+        .footer-center-logos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+        }
+
+        .footer-brand-logo {
+            max-width: 300px;
+        }
+
+        /*Make icons white*/
+        .footer-icons{
+            filter: invert(98%) sepia(3%) saturate(1519%) hue-rotate(185deg) brightness(113%) contrast(83%);
+        }
+
+        /*Set size and spacing of the social icons*/
+        .footer-social-icons img {
+            height: 30px;
+            margin-top: 15px;
+        }
+
+        @media screen and (max-width: 768px){
+
+            /*Make logo smaller on smaller screens*/
+            .footer-brand-logo {
+                width: 250px;
+            }
+
+            /*Make brand logo and social icons
+            container take up full width of the
+            screen on smaller sizes*/
+            .footer-center-logos {
+                width: 100%;
+            }
+        }
+        
+    /******************************************/
+    /*       Contact Info (Right Column)      */
+    /******************************************/
+
+        .footer-contact-info{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        .footer-contact-info p {
+            margin: 0;
+            color: var(--light-font-color);
+        }
+
+        .footer-social-icons, .footer-phone-number, .footer-address{
+            display: flex;
+        }
+
+        .footer-icons{
+            height: 25px;
+            margin: 0 5px;
+        }
+
+        .footer-address, .footer-phone-number{
+            margin: 18px 5px;
+        }
+
+        @media screen and (max-width: 768px){
+
+            /*Make contact info container take up full
+            width on smaller screens*/
+            .footer-contact-info {
+                width: 100%;
+            }
+
+            .footer-contact-info {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .footer-address, .footer-phone-number {
+                margin: 5px;
+                justify-content: center;
+            }
+
+            /*Make icons smaller on smaller screens*/
+            .footer-icons {
+                height: 20px;
+            }
+
+        }
+
+    /******************************************/
+    /*         Footer Credit Info             */
+    /******************************************/
+        .footer-credit {
+            text-align: center;
+        }
+
+        .footer-credit p {
+            margin: 0;
+            font-size: 10px;
+        }
