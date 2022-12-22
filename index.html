@@ -8,13 +8,16 @@
     <title>Best Hairdresser & Hair Salon in Tucson | Mon Chéri</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="components/photo-slider/photo-slider.css">
+<!--    <link rel="stylesheet" href="components/photo-slider/photo-slider.css">-->
 
     <!--Load header from web component-->
     <script src="components/header/header.js"></script>
 
     <!--Load footer from web component-->
     <script src="components/footer/footer.js"></script>
+
+    <!--Load footer from web component-->
+    <script src="components/photo-slider/photo-slider.js"></script>
 </head>
 <body>
 
@@ -65,28 +68,28 @@
         <h4>Where Craftsmanship Meets Beauty</h4>
         <h1>Services Tailored to Your Unique Style</h1>
 
-        <div class="photo-slider">
-            <article class="slider-description">
-                <h3>Hairstyles For Events</h3>
+        <photo-slider-component></photo-slider-component>
 
-                <p>For those special moments that deserve the extra care and attention. Weddings, Birthdays, Graduations, and more.</p>
+<!--        <div class="photo-slider">-->
+<!--            <article class="slider-description">-->
+<!--                <h3>Hairstyles For Events</h3>-->
 
-                <p>Our expert hairdressers will make sure you have a uniquely crafted and elegantly styled look that will leave everyone around you totally astonished.</p>
-            </article>
+<!--                <p>For those special moments that deserve the extra care and attention. Weddings, Birthdays, Graduations, and more.</p>-->
 
-            <div class="carousel">
+<!--                <p>Our expert hairdressers will make sure you have a uniquely crafted and elegantly styled look that will leave everyone around you totally astonished.</p>-->
+<!--            </article>-->
 
-                <img class="photo-slide photo-slide-left" src="assets/photos/service-images/makeup.jpg" alt="">
+<!--            <div class="carousel">-->
 
-                <span class="slider-btn next-btn prevent-select">&gt</span>
-                <span class="slider-btn prev-btn prevent-select">&lt</span>
+<!--                <span class="slider-btn next-btn prevent-select">&gt</span>-->
+<!--                <span class="slider-btn prev-btn prevent-select">&lt</span>-->
 
-                <img class="photo-slide photo-slide-center" src="assets/photos/service-images/hairstyle-for-events.jpg" alt="">
+<!--                <img class="photo-slide photo-slide-left" src="assets/photos/service-images/makeup.jpg" alt="">-->
+<!--                <img class="photo-slide photo-slide-center" src="assets/photos/service-images/hairstyle-for-events.jpg" alt="">-->
+<!--                <img class="photo-slide photo-slide-right" src="assets/photos/service-images/hair-color.jpg" alt="">-->
+<!--            </div>-->
 
-                <img class="photo-slide photo-slide-right" src="assets/photos/service-images/hair-color.jpg" alt="">
-            </div>
-
-        </div>
+<!--        </div>-->
 
 
         <span class="btn-main">
@@ -187,6 +190,7 @@
     <footer-component></footer-component>
 
     <script type="text/javascript" src="components/header/mobile-menu-helper.js"></script>
+    <script type="text/javascript" src="/components/photo-slider/photo-slider-helper.js"></script>
 
 </body>
 </html>
