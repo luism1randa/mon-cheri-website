@@ -16,12 +16,11 @@
     <!--Load footer from web component-->
     <script src="components/footer/footer.js"></script>
 
-    <!--Load footer from web component-->
-    <script src="components/photo-slider/photo-slider.js"></script>
 </head>
 <body>
 
     <header-component></header-component>
+    <!--TODO: add slot to header for SEO-->
 
     <section class="hero-section" id="hero-home">
         <div class="hero-headers-container">
@@ -31,7 +30,7 @@
     </section>
 
 
-    <section>
+    <section >
         <h4>Get In Touch</h4>
         <h1>Your Transformation is One Step Away</h1>
 
@@ -69,31 +68,12 @@
         <h1>Services Tailored to Your Unique Style</h1>
 
         <photo-slider-component></photo-slider-component>
-
-<!--        <div class="photo-slider">-->
-<!--            <article class="slider-description">-->
-<!--                <h3>Hairstyles For Events</h3>-->
-
-<!--                <p>For those special moments that deserve the extra care and attention. Weddings, Birthdays, Graduations, and more.</p>-->
-
-<!--                <p>Our expert hairdressers will make sure you have a uniquely crafted and elegantly styled look that will leave everyone around you totally astonished.</p>-->
-<!--            </article>-->
-
-<!--            <div class="carousel">-->
-
-<!--                <span class="slider-btn next-btn prevent-select">&gt</span>-->
-<!--                <span class="slider-btn prev-btn prevent-select">&lt</span>-->
-
-<!--                <img class="photo-slide photo-slide-left" src="assets/photos/service-images/makeup.jpg" alt="">-->
-<!--                <img class="photo-slide photo-slide-center" src="assets/photos/service-images/hairstyle-for-events.jpg" alt="">-->
-<!--                <img class="photo-slide photo-slide-right" src="assets/photos/service-images/hair-color.jpg" alt="">-->
-<!--            </div>-->
-
-<!--        </div>-->
+        <!--TODO: make slider appear above text on mobile-->
+        <!--TODO: add slot to photo-slider for SEO-->
 
 
-        <span class="btn-main">
-                <a href="services.html">Explore Our Services</a>
+        <span class="btn-primary">
+                <a href="services.html">Explore All Services</a>
             </span>
 
 
@@ -105,19 +85,20 @@
         <h1>Previous Work</h1>
 
         <div class="gallery-container">
-            <img class="gallery-img-frame show-off-img-start" src="assets/photos/past-work/home-gallery-01.jpg" alt="">
+            <img class="gallery-img-frame show-off-img-start" src="assets/photos/past-work/home-gallery-08.jpg" alt="">
+            <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-01.jpg" alt="">
             <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-02.jpg" alt="">
             <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-03.jpg" alt="">
             <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-04.jpg" alt="">
             <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-05.jpg" alt="">
             <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-06.jpg" alt="">
             <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-07.jpg" alt="">
-            <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-08.jpg" alt="">
+
             <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-09.jpg" alt="">
             <img class="gallery-img-frame show-off-img-end" src="assets/photos/past-work/home-gallery-10.jpg" alt="">
         </div>
 
-        <span class="btn-main">
+        <span class="btn-primary">
                 <a href="services.html">See The Full Gallery</a>
             </span>
     </section>
@@ -147,7 +128,7 @@
 
 
 
-        <span class="btn-main">
+        <span class="btn-primary">
                 <a href="services.html">Learn More About Mon Chéri</a>
         </span>
     </section>
@@ -155,7 +136,7 @@
 
     <section>
         <h4>Get In Touch</h4>
-        <h1>Conveniently Located In El Rio Barber Stylist</h1>
+        <h1>Conveniently Located Inside El Rio Barber Stylist</h1>
 
 
 
@@ -167,27 +148,24 @@
             </div>
 
             <div class="contact-us-btn-group">
-                <span class="btn-icon">
+                <span class="btn-primary-icon">
                     <img src="assets/icons/call_FILL0_wght400_GRAD0_opsz48.svg" alt="">
                     <a href="tel:520-440-6118">Call Us (520) 440-6118</a>
                 </span>
-                <span class="btn-icon">
+                <span class="btn-primary-icon">
                     <img src="assets/icons/directions_FILL0_wght400_GRAD0_opsz48.svg" alt="">
                     <a href="">Get Directions</a>
                 </span>
-                <span class="btn-icon">
+                <span class="btn-primary-icon">
                     <img src="assets/icons/book_online_FILL0_wght400_GRAD0_opsz48.svg" alt="">
                     <a href="">Book Online</a>
                 </span>
             </div>
         </div>
-
-
-
-
     </section>
 
     <footer-component></footer-component>
+    <!--TODO: add slot to footer for SEO-->
 
     <script type="text/javascript" src="components/header/mobile-menu-helper.js"></script>
     <script type="text/javascript" src="/components/photo-slider/photo-slider-helper.js"></script>
