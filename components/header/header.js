@@ -44,7 +44,7 @@ headerTemplate.innerHTML = `
                             <span class="mobile-item-glyph">&#62;</span>
                         </span>
                     </a>
-                    <a href="book.html">
+                    <a href="http://moncheribook.square.site/" target="_blank">
                         <span class="nav-item non-active-page nav-cta-btn">
                             <span>Book Now</span>
                             <span class="mobile-item-glyph">&#62;</span>

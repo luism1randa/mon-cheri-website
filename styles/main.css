@@ -168,6 +168,13 @@
             min-height: 200px;
         }
 
+        #hero-contact{
+            background: var(--main-brand-color-dark) url(/assets/photos/hero-images/contact.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+        }
+
         /*Todo: Condense hero styles*/
 
         @media screen and (max-width: 767px){
