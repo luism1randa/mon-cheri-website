@@ -9,7 +9,7 @@
         --main-brand-color-lighter: #FFF6EE;
         --light-section-color: white;
         --dark-font-color: #000000;
-        --subheading-color-dark: #545454;
+        --subheading-color-dark: #424242;
         --light-font-color: #E4E4E4;
         --footer-faded-font-color: #8C8B8C;
         --hyperlink-color: #3478b0;
@@ -471,6 +471,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(30px, auto);
+        max-width: 1000px;
+        margin: 0 auto;
     }
 
     .service-block-container {
@@ -484,7 +486,7 @@
         width: 180px;
         object-fit: cover;
         /*object-position: top;*/
-        margin: 0;
+        margin: 0 auto 0 auto;
     }
 
     .service-block-title{
@@ -545,6 +547,160 @@
             grid-row: 4;
         }
 
+    }
+
+/******************************************/
+/*           Contact Info Card            */
+/******************************************/
+
+    /*Card style for container*/
+    .phone-hours-address-container{
+        display: grid;
+        grid-template-columns: 1fr 2px 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        position: relative;
+        box-sizing: border-box;
+        width: 650px;
+        padding: 50px 25px 25px 25px;
+        margin: 50px auto 15px auto;
+        border-radius: 5px;
+        box-shadow:
+                rgba(0, 0, 0, 0.12) 0px 1px 3px,
+                rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background-color: var(--light-section-color);
+    }
+
+    .business-details-icon{
+        display: block;
+        height: 30px;
+        width: 140px;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -22px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        background-color: var(--main-brand-color);
+    }
+
+    .phone-hours-address-container p{
+        margin: 10px 0;
+    }
+
+    .hours {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        text-align: right;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .phone-address-hours-divider {
+        background-color: var(--main-brand-color);
+        width: 2px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .phone {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .phone a, .address a{
+        text-decoration: none;
+    }
+
+    .address {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-width: 700px){
+
+        .phone-hours-address-container{
+            /*Use up the entire width of the screen on smaller screens*/
+            width: 100%;
+
+            /*Reduce white space between the card and content
+            above it on smaller screens.*/
+            padding-top: 35px;
+
+            /*Reduce the top margin on smaller screens*/
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+            align-items: center;
+        }
+
+        /*Turn the icon into a smaller circle*/
+        .business-details-icon{
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        /*Row 1*/
+        .hours{
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        /*Row 2*/
+        .phone{
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        /*Row 3*/
+        .address {
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+            text-align: center;
+            margin: 5px 0;
+
+        }
+
+        /*Vertical divider should be hidden on smaller screens*/
+        .phone-address-hours-divider{
+            display: none;
+        }
+
+        /*Add bars to the left and right of headers*/
+        h5 {
+            overflow: hidden;
+            text-align: center;
+        }
+
+        h5:before,
+        h5:after {
+            background-color: var(--main-brand-color);
+            content: "";
+            display: inline-block;
+            height: 3px;
+            position: relative;
+            vertical-align: middle;
+            width: 50%;
+        }
+
+        h5:before {
+            right: 0.5em;
+            margin-left: -50%;
+        }
+
+        h5:after {
+            left: 0.5em;
+            margin-right: -50%;
+        }
     }
 
 
