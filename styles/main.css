@@ -148,7 +148,7 @@
         }
 
         #hero-home {
-            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images/home.jpg);
+            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images-optimized/home.webp);
             background-size: cover;
             background-position: center;
             min-height: 200px;
@@ -156,21 +156,21 @@
         }
 
         #hero-services {
-            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images/services.jpg);
+            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images-optimized/services.webp);
             background-size: cover;
             background-position: center;
             min-height: 200px;
         }
 
         #hero-about{
-            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images/about.jpg);
+            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images-optimized/about.webp);
             background-size: cover;
-            background-position: center;
+            background-position: top;
             min-height: 200px;
         }
 
         #hero-contact{
-            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images/contact.jpg);
+            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images-optimized/contact.webp);
             background-size: cover;
             background-position: center;
             min-height: 200px;
