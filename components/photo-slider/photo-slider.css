@@ -6,7 +6,7 @@
 
 .service-description {
     display: none;
-    height: 350px;
+    /*height: 350px;*/
 }
 
 .default-service{
@@ -131,7 +131,7 @@
 
     .slider-description {
         width: 100%;
-        height: 350px;
+        /*height: 350px;*/
     }
 
     .carousel {
@@ -145,6 +145,14 @@
 
     #prev-btn{
         display: flex;
+    }
+
+    .slider-description{
+        order: 2;
+    }
+
+    .carousel{
+        order: 1;
     }
 
 

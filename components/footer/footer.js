@@ -65,7 +65,7 @@ footerTemplate.innerHTML = `
             </div>
         
             <div class="footer-credit">
-                <p>Designed by <a href="mailto:luismiranda.dev@gmail.com">luismiranda.dev@gmail.com</a></p>
+<!--                <p>Designed by <a href="mailto:luismiranda.dev@gmail.com">luismiranda.dev@gmail.com</a></p>-->
                 <p>Social icons provided by icons8.com</p>
             </div>
             

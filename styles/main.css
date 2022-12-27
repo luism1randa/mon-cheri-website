@@ -117,72 +117,95 @@
     /*               Hero Section              */
     /******************************************/
 
-    .hero-section {
-        padding: 7vw;
-        height: 320px;
-        background-color: var(--main-brand-color-dark);
-        display: flex;
-        align-items: center;
-    }
+        .hero-section {
+            padding: 7vw;
+            height: 200px;
+            background-color: var(--main-brand-color-dark);
+            display: flex;
+            align-items: center;
+        }
 
-    .hero-headers-container{
-        margin: 10px auto;
-    }
+        .hero-headers-container{
+            margin: 10px auto;
+        }
 
-    .hero-section h1 {
-        font-family: mukta;
-        text-align: center;
-        font-size: 2.5em;
-        font-weight: 600;
+        .hero-section h1 {
+            font-family: mukta, sans-serif;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 600;
+            color: #FFFFFF;
+
+        }
+
+        .hero-section h4 {
+            font-family: mukta, sans-serif;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 300;
+            color: #FFFFFF;
+        }
+
+        #hero-home {
+            background: var(--main-brand-color-dark) url(/assets/photos/hero-images/home.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            height: 320px;
+        }
+
+        #hero-services {
+            background: var(--main-brand-color-dark) url(/assets/photos/hero-images/services.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+        }
+
+        #hero-about{
+            background: var(--main-brand-color-dark) url(/assets/photos/hero-images/about.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+        }
+
+        #hero-contact{
+            background: var(--main-brand-color-dark) url(/assets/photos/hero-images/contact.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+        }
+
+        /*Todo: Condense hero styles*/
+
+        @media screen and (max-width: 767px){
+            .hero-section h1 {
+                font-size: 1.8em;
+            }
+        }
+
+    section {
+        padding: 4vw;
+        min-height: 220px;
         color: #FFFFFF;
-
+        background-color: var(--light-section-color);
     }
 
-    .hero-section h4 {
-        font-family: mukta;
-        text-align: center;
-        font-size: 1.5em;
-        font-weight: 300;
-        color: #FFFFFF;
-    }
-
-    #hero-home {
-        background: var(--main-brand-color-dark) url(../assets/photos/hero-images/home.jpg);
-        background-size: cover;
-        background-position: center;
-        min-height: 200px;
-        /*padding: 100px;*/
+    section:nth-of-type(2n):not(.breakaway-section){
+        background-color: var(--main-brand-color-lighter);
     }
 
     @media screen and (max-width: 767px){
-        .hero-section h1 {
-            font-size: 1.8em;
+        section {
+            padding: 7vw 4vw;
         }
     }
-
-section {
-    padding: 4vw;
-    min-height: 220px;
-    color: #FFFFFF;
-    background-color: var(--light-section-color);
-}
-
-section:nth-of-type(2n):not(.breakaway-section){
-    background-color: var(--main-brand-color-lighter);
-}
-
-@media screen and (max-width: 767px){
-    section {
-        padding: 7vw 4vw;
-    }
-}
 
 /******************************************/
 /*                Buttons                 */
 /******************************************/
 
     /*Primary button styling*/
-    .btn-main {
+    .btn-primary {
         display: block;
         background-color: var(--main-brand-color);
         text-align: center;
@@ -193,7 +216,7 @@ section:nth-of-type(2n):not(.breakaway-section){
         cursor: pointer;
     }
 
-    .btn-main a {
+    .btn-primary a {
         text-decoration: none;
         text-transform: uppercase;
         font-family: mukta, sans-serif;
@@ -202,7 +225,7 @@ section:nth-of-type(2n):not(.breakaway-section){
     }
 
     /*Buttons with an icon on the left*/
-    .btn-icon {
+    .btn-primary-icon {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -215,17 +238,80 @@ section:nth-of-type(2n):not(.breakaway-section){
         cursor: pointer;
     }
 
-    .btn-icon img {
+    .btn-primary-icon img {
         max-height: 25px;
     }
 
-    .btn-icon a {
+    .btn-primary-icon a {
         text-decoration: none;
         text-transform: uppercase;
         font-family: mukta, sans-serif;
         margin: 10px;
         font-size: 16px;
         color: var(--dark-font-color);
+    }
+
+    /*Small sized book now buttons with an icon on the left*/
+    .book-now-btn-sm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--main-brand-color);
+        text-align: center;
+        padding: 2px 4px;
+        min-width: 150px;
+        height: 40px;
+        margin: 5px 10px;
+        box-shadow: var(--btn-box-shadow-color) 0px 0px 2px;
+        cursor: pointer;
+    }
+
+    /*Constrain the icon size*/
+    .book-now-btn-sm img {
+        max-height: 25px;
+    }
+
+    /*Replace default hyperlink styles with theme styles*/
+    .book-now-btn-sm a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: mukta, sans-serif;
+        margin: 10px;
+        font-size: 14px;
+        color: var(--dark-font-color);
+    }
+
+    /*Align booking buttons to the left by default*/
+    .book-now-btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    /*Small screens styles*/
+    @media screen and (max-width: 500px){
+
+        /*Align booking buttons in the center on smaller screens.*/
+        .book-now-btn-group {
+            justify-content: center;
+        }
+
+        /*Allow two buttons to fit on the same row on
+        iphone SE sizes*/
+        .book-now-btn-sm{
+            min-width: 140px;
+        }
+
+    }
+
+    /*Large screen styles*/
+    @media screen and (min-width: 500px) {
+
+        /*Align booking buttons to the left so they are in line with
+        the text above.*/
+        .book-now-btn-sm{
+            margin-left: 0;
+        }
     }
 
 /******************************************/
@@ -294,87 +380,172 @@ section:nth-of-type(2n):not(.breakaway-section){
 /******************************************/
 /*             Gallery Page               */
 /******************************************/
-.gallery-img-frame {
-    box-sizing: border-box;
 
-    margin: 20px;
+    /*Apply a grame to an image*/
+    .gallery-img-frame {
+        box-sizing: border-box;
+        margin: 20px;
 
-    /*border-radius: 10px;*/
-    border: 8px solid rgb(255, 255, 255);
-    box-shadow:
-            rgba(0, 0, 0, 0.12) 0px 1px 3px,
-            rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-
-.gallery-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    align-items: center;
-    justify-items: center;
-    max-width: 800px;
-    margin: 30px auto;
-}
-
-.gallery-container img {
-    box-sizing: border-box;
-    object-fit: cover;
-    margin: 0;
-    width: 100%;
-    height: 200px;
-}
-
-
-.gallery-container img:first-of-type {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-    width: 100%;
-    height: 420px;
-
-}
-
-.gallery-container img:nth-child(10) {
-    grid-column: 3 / span 2;
-    grid-row: 3 / span 2;
-    width: 100%;
-    height: 420px;
-}
-
-
-
-
-
-@media (max-width: 900px) {
-    .gallery-container img {
-        height: 125px;
+        border: 8px solid rgb(255, 255, 255);
+        box-shadow:
+                rgba(0, 0, 0, 0.12) 0px 1px 3px,
+                rgba(0, 0, 0, 0.24) 0px 1px 2px;
     }
 
-    .gallery-container img:first-of-type {
-        height: 280px;
-    }
-
-    .gallery-container img:nth-child(10) {
-        height: 280px;
-    }
-}
-
-@media (max-width: 500px) {
-    .gallery-container {
-        grid-template-columns: repeat(2, 1fr);
+    /*Large screens will default to a 4 column grid
+    The top left image should span 2 col x 2 row*/
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        max-width: 800px;
+        margin: 30px auto;
     }
 
     .gallery-container img {
-        height: 150px;
+        box-sizing: border-box;
+        object-fit: cover;
+        margin: 0;
+        width: 100%;
+        height: 200px;
     }
 
+
     .gallery-container img:first-of-type {
-        height: 300px;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        width: 100%;
+        height: 420px;
+
     }
 
     .gallery-container img:nth-child(10) {
-        grid-column: 1 / 3;
-        grid-row: 5 / span 2;
-        height: 300px;
+        grid-column: 3 / span 2;
+        grid-row: 3 / span 2;
+        width: 100%;
+        height: 420px;
     }
-}
+
+    @media (max-width: 900px) {
+        .gallery-container img {
+            height: 125px;
+        }
+
+        .gallery-container img:first-of-type {
+            height: 280px;
+        }
+
+        .gallery-container img:nth-child(10) {
+            height: 280px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .gallery-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gallery-container img {
+            height: 150px;
+        }
+
+        .gallery-container img:first-of-type {
+            height: 300px;
+        }
+
+        .gallery-container img:nth-child(10) {
+            grid-column: 1 / 3;
+            grid-row: 5 / span 2;
+            height: 300px;
+        }
+    }
+
+/******************************************/
+/*            Service Block               */
+/******************************************/
+
+    .service-block{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(30px, auto);
+    }
+
+    .service-block-container {
+        grid-column: 1 /2;
+        grid-row: 1/ 3
+    }
+
+    .service-block-img{
+        display: block;
+        height: 200px;
+        width: 180px;
+        object-fit: cover;
+        object-position: top;
+        margin: 0;
+    }
+
+    .service-block-title{
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .service-block-details{
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .book-now-btn-group {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .service-block h1 {
+        text-align: left;
+    }
+
+    /*Smaller screen styles*/
+    @media screen and (max-width: 500px){
+
+        /*Make the thumbnail full width on smaller screens*/
+
+        .service-block-container {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .service-block-img{
+            height: 280px;
+            width: 100%;
+        }
+
+        .service-block-title {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+
+            font-size: 1.5em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .service-block-container {
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .service-block-details {
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+        }
+
+        .book-now-btn-group {
+            grid-column: 1 / 4;
+            grid-row: 4;
+        }
+
+    }
+
+
+
