@@ -40,7 +40,7 @@ footerTemplate.innerHTML = `
                 </span>
         
                 <div class="footer-center-logos">
-                    <img class="footer-brand-logo" src="components/footer/brand/full-width-logo-inverted.png" alt="">
+                    <a href="index.html"><img class="footer-brand-logo" src="components/footer/brand/full-width-logo-inverted.png" alt=""></a>
                     <span class="footer-social-icons">
                         <a href=""><img class="footer-icons" src="components/footer/icons/social-icons/icons8-facebook.svg" alt=""></a>
                         <img class="footer-icons" src="components/footer/icons/social-icons/icons8-instagram.svg" alt="">
