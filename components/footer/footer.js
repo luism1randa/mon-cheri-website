@@ -36,13 +36,16 @@ footerTemplate.innerHTML = `
                         <a href="contact.html">
                             <li>Contact</li>
                         </a>
+                        <a href="https://moncheribook.square.site/">
+                            <li>Book Online</li>
+                        </a>
                     </ul>
                 </span>
         
                 <div class="footer-center-logos">
                     <a href="index.html"><img class="footer-brand-logo" src="components/footer/brand/full-width-logo-inverted.png" alt=""></a>
                     <span class="footer-social-icons">
-                        <a href=""><img class="footer-icons" src="components/footer/icons/social-icons/icons8-facebook.svg" alt=""></a>
+                        <a href="https://www.facebook.com/beautybykatthya" target="_blank"><img class="footer-icons" src="components/footer/icons/social-icons/icons8-facebook.svg" alt=""></a>
                         <img class="footer-icons" src="components/footer/icons/social-icons/icons8-instagram.svg" alt="">
                     </span>
                 </div>
