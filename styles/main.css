@@ -3,18 +3,18 @@
 /******************************************/
 
     :root {
-        --main-brand-color: #F3D280;
-        --main-brand-color-muted: #dcd2b9;
+        --primary-brand-color: #F3D280;
+        --primary-brand-color-dark: #302F2D;
         --secondary-brand-color: #F3C580;
-        --main-brand-color-lighter: #FFF6EE;
-        --light-section-color: white;
-        --dark-font-color: #000000;
-        --subheading-color-dark: #424242;
-        --light-font-color: #E4E4E4;
-        --footer-faded-font-color: #8C8B8C;
+        --muted-brand-color: #dcd2b9;
+        --muted-brand-color-lighter: #FFF6EE;
+        --section-bg-color-light: white;
+        --font-color-dark: #000000;
+        --font-color-light: #E4E4E4;
+        --font-color-subheading: #424242;
+        --font-color-muted: #8C8B8C;
         --hyperlink-color: #3478b0;
-        --main-brand-color-dark: #302F2D;
-        --btn-box-shadow-color: #0000003a;
+        --box-shadow-color: #0000003a;
         --footer-bg-color: #302F2D;
     }
 
@@ -24,21 +24,13 @@
         max-width: 1500px;
         font-family: Mukta, Roboto, sans-serif;
         line-height: 1.5;
-        color: var(--dark-font-color);
+        color: var(--font-color-dark);
         overflow-x: hidden;
     }
 
     address {
         font-style: normal;
     }
-
-    .prevent-select {
-        -webkit-user-select: none; /* Safari */
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
-    }
-
-
 
 /******************************************/
 /*               Typography               */
@@ -50,7 +42,7 @@
         font-size: 1.5em;
         margin-top: 10px;
         margin-bottom: 10px;
-        color: var(--main-brand-color-dark);
+        color: var(--primary-brand-color-dark);
     }
 
     h2 {
@@ -59,7 +51,7 @@
 
     h3 {
         font-family: mukta, sans-serif;
-        color: var(--main-brand-color-dark);
+        color: var(--primary-brand-color-dark);
         font-size: 1.5em;
 
     }
@@ -71,7 +63,7 @@
         font-weight: 500;
         margin-top: 5px;
         margin-bottom: 10px;
-        color: var(--subheading-color-dark);
+        color: var(--font-color-subheading);
     }
 
     h5{
@@ -79,7 +71,7 @@
         font-size: 1.1em;
         margin-top: 5px;
         margin-bottom: 5px;
-        color: var(--main-brand-color-dark);
+        color: var(--primary-brand-color-dark);
     }
 
     .text-blurb p {
@@ -90,7 +82,7 @@
     p{
         font-family: mukta, sans-serif;
         font-size: 18px;
-        color: var(--main-brand-color-dark);
+        color: var(--primary-brand-color-dark);
     }
 
     /*Mobile headings*/
@@ -120,7 +112,7 @@
         .hero-section {
             padding: 7vw;
             height: 200px;
-            background-color: var(--main-brand-color-dark);
+            background-color: var(--primary-brand-color-dark);
             display: flex;
             align-items: center;
         }
@@ -147,7 +139,7 @@
         }
 
         #hero-home {
-            background: var(--main-brand-color-dark) url(/assets/photos/hero-images/home.jpg);
+            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images/home.jpg);
             background-size: cover;
             background-position: center;
             min-height: 200px;
@@ -155,21 +147,21 @@
         }
 
         #hero-services {
-            background: var(--main-brand-color-dark) url(/assets/photos/hero-images/services.jpg);
+            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images/services.jpg);
             background-size: cover;
             background-position: center;
             min-height: 200px;
         }
 
         #hero-about{
-            background: var(--main-brand-color-dark) url(/assets/photos/hero-images/about.jpg);
+            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images/about.jpg);
             background-size: cover;
             background-position: center;
             min-height: 200px;
         }
 
         #hero-contact{
-            background: var(--main-brand-color-dark) url(/assets/photos/hero-images/contact.jpg);
+            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images/contact.jpg);
             background-size: cover;
             background-position: center;
             min-height: 200px;
@@ -187,11 +179,11 @@
         padding: 4vw;
         min-height: 220px;
         color: #FFFFFF;
-        background-color: var(--light-section-color);
+        background-color: var(--section-bg-color-light);
     }
 
     section:nth-of-type(2n):not(.breakaway-section){
-        background-color: var(--main-brand-color-lighter);
+        background-color: var(--muted-brand-color-lighter);
     }
 
     @media screen and (max-width: 767px){
@@ -204,15 +196,22 @@
 /*                Buttons                 */
 /******************************************/
 
+    /*Used to make text in buttons non-selectable*/
+    .prevent-select {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+
     /*Primary button styling*/
     .btn-primary {
         display: block;
-        background-color: var(--main-brand-color);
+        background-color: var(--primary-brand-color);
         text-align: center;
         padding: 14px 0;
         width: 270px;
         margin: 35px auto;
-        box-shadow: var(--btn-box-shadow-color) 0px 0px 2px;
+        box-shadow: var(--box-shadow-color) 0px 0px 2px;
         cursor: pointer;
     }
 
@@ -221,7 +220,7 @@
         text-transform: uppercase;
         font-family: mukta, sans-serif;
         font-size: 16px;
-        color: var(--dark-font-color);
+        color: var(--font-color-dark);
     }
 
     /*Buttons with an icon on the left*/
@@ -229,12 +228,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--main-brand-color);
+        background-color: var(--primary-brand-color);
         text-align: center;
         padding: 6px 20px;
         width: 240px;
         margin: 35px auto;
-        box-shadow: var(--btn-box-shadow-color) 0px 0px 2px;
+        box-shadow: var(--box-shadow-color) 0px 0px 2px;
         cursor: pointer;
     }
 
@@ -248,7 +247,7 @@
         font-family: mukta, sans-serif;
         margin: 10px;
         font-size: 16px;
-        color: var(--dark-font-color);
+        color: var(--font-color-dark);
     }
 
     /*Small sized book now buttons with an icon on the left*/
@@ -256,13 +255,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--main-brand-color);
+        background-color: var(--primary-brand-color);
         text-align: center;
         padding: 2px 4px;
         min-width: 150px;
         height: 40px;
         margin: 5px 10px;
-        box-shadow: var(--btn-box-shadow-color) 0px 0px 2px;
+        box-shadow: var(--box-shadow-color) 0px 0px 2px;
         cursor: pointer;
     }
 
@@ -278,7 +277,7 @@
         font-family: mukta, sans-serif;
         margin: 10px;
         font-size: 14px;
-        color: var(--dark-font-color);
+        color: var(--font-color-dark);
     }
 
     /*Align booking buttons to the left by default*/
@@ -471,7 +470,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(30px, auto);
-        max-width: 1000px;
         margin: 0 auto;
     }
 
@@ -567,7 +565,7 @@
         box-shadow:
                 rgba(0, 0, 0, 0.12) 0px 1px 3px,
                 rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        background-color: var(--light-section-color);
+        background-color: var(--section-bg-color-light);
     }
 
     .business-details-icon{
@@ -582,7 +580,7 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 25px;
-        background-color: var(--main-brand-color);
+        background-color: var(--primary-brand-color);
     }
 
     .phone-hours-address-container p{
@@ -598,7 +596,7 @@
     }
 
     .phone-address-hours-divider {
-        background-color: var(--main-brand-color);
+        background-color: var(--primary-brand-color);
         width: 2px;
         grid-column: 2 / 3;
         grid-row: 1 / 3;
@@ -683,7 +681,7 @@
 
         h5:before,
         h5:after {
-            background-color: var(--main-brand-color);
+            background-color: var(--primary-brand-color);
             content: "";
             display: inline-block;
             height: 3px;

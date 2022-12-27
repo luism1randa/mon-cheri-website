@@ -35,7 +35,7 @@
         font-weight: 500;
         margin-top: 5px;
         margin-bottom: 10px;
-        color: var(--dark-font-color);
+        color: var(--font-color-dark);
     }
 
     /*Reduce the image size on smaller screens*/

@@ -44,7 +44,7 @@
     font-weight: 400;
     text-decoration: none;
     padding: 13px;
-    color: var(--dark-font-color);
+    color: var(--font-color-dark);
 }
 
 
@@ -54,10 +54,10 @@
     /*Nav CTA styling*/
     .nav-cta-btn {
         padding: 8px 24px;
-        background-color: var(--main-brand-color);
+        background-color: var(--primary-brand-color);
         text-transform: uppercase;
         font-size: 16px;
-        box-shadow: var(--btn-box-shadow-color) 0px 0px 2px;
+        box-shadow: var(--box-shadow-color) 0px 0px 2px;
     }
 
     /*.active-page {*/
@@ -65,7 +65,7 @@
     /*}*/
 
     .non-active-page:hover :not(.nav-cta-btn){
-        border-bottom: 3px solid var(--main-brand-color);
+        border-bottom: 3px solid var(--primary-brand-color);
     }
 
     /*.non-active-page:active{*/
@@ -95,13 +95,13 @@
     margin: 0 18px;
 
     background-color: white;
-    border: 1px solid var(--btn-box-shadow-color);
+    border: 1px solid var(--box-shadow-color);
     border-radius: 2px;
 }
 
 #mobile-nav-btn:active {
-    background-color: var(--main-brand-color);
-    border: 1px solid var(--btn-box-shadow-color);
+    background-color: var(--primary-brand-color);
+    border: 1px solid var(--box-shadow-color);
     border-radius: 2px;
 }
 
@@ -134,7 +134,7 @@
         box-shadow:
                 inset 0px 39px 19px -50px #000000,
                 0px 35px 30px -45px #000000;
-        background-color: var(--main-brand-color);
+        background-color: var(--primary-brand-color);
     }
 
     /*Let menu items take up entire width*/
@@ -151,7 +151,7 @@
         width: 100%;
         padding: 20px 30px;
         justify-content: space-between;
-        border-bottom: 1px solid var(--btn-box-shadow-color);
+        border-bottom: 1px solid var(--box-shadow-color);
     }
 
     /*Show glyphs on smaller screens*/

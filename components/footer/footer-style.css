@@ -15,15 +15,15 @@ styles directory.*/
         min-height: 220px;
         padding: 50px 30px;
         background-color: var(--footer-bg-color);
-        color: var(--footer-faded-font-color);
+        color: var(--font-color-muted);
     }
 
     footer p {
-        color: var(--footer-faded-font-color);
+        color: var(--font-color-muted);
     }
 
     footer a {
-        color: var(--footer-faded-font-color);
+        color: var(--font-color-muted);
         text-decoration: none;
     }
 
@@ -140,7 +140,7 @@ styles directory.*/
 
         .footer-contact-info p {
             margin: 0;
-            color: var(--light-font-color);
+            color: var(--font-color-light);
         }
 
         .footer-social-icons, .footer-phone-number, .footer-address{

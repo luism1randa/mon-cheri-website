@@ -14,7 +14,7 @@
         margin: 10px auto;
         border-radius: 50%;
         border: solid 5px white;
-        box-shadow: var(--btn-box-shadow-color) 0px 0px 10px;
+        box-shadow: var(--box-shadow-color) 0px 0px 10px;
     }
 
     .team-grid {
