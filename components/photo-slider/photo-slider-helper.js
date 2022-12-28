@@ -27,9 +27,9 @@ let descriptions = photoSliderComponent.querySelectorAll('.service-description')
 
 // Image name format: service-image-0000X.jpg
 // const IMG_PATH_BASE = 'service-images/service-image-0000';
-const IMG_PATH_BASE = '/components/photo-slider/service-images/service-image-0000';
+const IMG_PATH_BASE = '/components/photo-slider/service-images-optimized/service-image-0000';
 // All images are assumed to be in .jpg format
-const IMG_EXT = '.jpg';
+const IMG_EXT = '.webp';
 
 // Index of the image that will first be loaded
 const DEFAULT_SERVICE = 6;

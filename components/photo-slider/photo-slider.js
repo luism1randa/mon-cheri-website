@@ -75,9 +75,9 @@ photoSlider.innerHTML = `
             <span class="slider-btn prevent-select" id="next-btn">&gt</span>
             <span class="slider-btn prevent-select" id="prev-btn">&lt</span>
     
-            <img class="photo-slide" id="left-slide" src="/components/photo-slider/service-images/service-image-00005.jpg" alt="">
-            <img class="photo-slide" id="center-slide" src="/components/photo-slider/service-images/service-image-00006.jpg" alt="">
-            <img class="photo-slide" id="right-slide" src="/components/photo-slider/service-images/service-image-00007.jpg" alt="">
+            <img class="photo-slide" id="left-slide" src="/components/photo-slider/service-images-optimized/service-image-00005.webp" alt="">
+            <img class="photo-slide" id="center-slide" src="/components/photo-slider/service-images-optimized/service-image-00006.webp" alt="">
+            <img class="photo-slide" id="right-slide" src="/components/photo-slider/service-images-optimized/service-image-00007.webp" alt="">
         </div>
     </div>
     
