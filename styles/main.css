@@ -149,7 +149,6 @@
         }
 
         #hero-home {
-            min-height: 450px;
             background: var(--primary-brand-color-dark) url(/assets/photos/hero-images-optimized/home.webp);
             background-size: cover;
             background-position: center;
@@ -181,9 +180,6 @@
 
         /*Medium sized screen hero styles*/
         @media screen and (max-width: 767px){
-            .hero-section {
-                min-height: 300px;
-            }
 
             .hero-section h1{
                 font-size: 1.8em;
