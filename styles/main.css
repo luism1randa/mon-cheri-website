@@ -172,6 +172,12 @@
             background-position: center;
         }
 
+        #hero-gallery{
+            background: var(--primary-brand-color-dark) url(/assets/photos/hero-images-optimized/gallery.webp);
+            background-size: cover;
+            background-position: center;
+        }
+
         /*Medium sized screen hero styles*/
         @media screen and (max-width: 767px){
             .hero-section {
@@ -395,7 +401,7 @@
 /*             Gallery Page               */
 /******************************************/
 
-    /*Apply a grame to an image*/
+    /*Apply a frame to an image*/
     .gallery-img-frame {
         box-sizing: border-box;
         margin: 20px;
@@ -428,31 +434,43 @@
     }
 
 
-    .gallery-container img:first-of-type {
-        grid-column: 1 / span 2;
-        grid-row: 1 / span 2;
+    /*The first image in HTML will be 2x2 and take up the left
+    top portion of the grid*/
+    .gallery-left-large img:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
         width: 100%;
         height: 420px;
 
     }
 
-    .gallery-container img:nth-child(10) {
-        grid-column: 3 / span 2;
-        grid-row: 3 / span 2;
+    /*The third image in HTML will be 2x2 and take up the right
+    top portion of the grid*/
+    .gallery-right-large img:nth-of-type(3) {
+        grid-column: span 2;
+        grid-row: span 2;
         width: 100%;
         height: 420px;
+
     }
+
+    /*.gallery-container img:nth-of-type(10n) {*/
+    /*    grid-column: 3 / span 2;*/
+    /*    grid-row: 3 / span 2;*/
+    /*    width: 100%;*/
+    /*    height: 420px;*/
+    /*}*/
 
     @media (max-width: 900px) {
         .gallery-container img {
             height: 125px;
         }
 
-        .gallery-container img:first-of-type {
+        .gallery-left-large img:first-child{
             height: 280px;
         }
 
-        .gallery-container img:nth-child(10) {
+        .gallery-right-large img:nth-of-type(3){
             height: 280px;
         }
     }
@@ -466,13 +484,13 @@
             height: 150px;
         }
 
-        .gallery-container img:first-of-type {
+        .gallery-left-large img:first-child{
             height: 300px;
         }
 
-        .gallery-container img:nth-child(10) {
+        .gallery-right-large img:nth-of-type(3){
             grid-column: 1 / 3;
-            grid-row: 5 / span 2;
+            grid-row: 1 / span 2;
             height: 300px;
         }
     }
