@@ -8,11 +8,22 @@
         <title>Best Hairdresser and Hair Salon in Tucson | Mon Chéri</title>
         <link rel="stylesheet" href="styles/main.css">
 
+        <!--Google Fonts: Mukta-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <!--Google Fonts: Merriweather-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
         <!--Load header from web component-->
         <script src="components/header/header.js"></script>
 
         <!--Load footer from web component-->
         <script src="components/footer/footer.js"></script>
+
+        <!--Load slideshow from web component-->
+        <script src="/components/photo-slider/photo-slider.js"></script>
 
         <!--  Favicon code  -->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -30,31 +41,96 @@
 
         <header-component></header-component>
 
-        <section>
-            <h4>The Results Speak for Themselves</h4>
-            <h1>Previous Work</h1>
-
-            <div class="gallery-container">
-                <img class="gallery-img-frame show-off-img-start" src="assets/photos/past-work/home-gallery-08.jpg" alt="">
-                <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-01.jpg" alt="">
-                <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-02.jpg" alt="">
-                <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-03.jpg" alt="">
-                <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-04.jpg" alt="">
-                <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-05.jpg" alt="">
-                <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-06.jpg" alt="">
-                <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-07.jpg" alt="">
-
-                <img class="gallery-img-frame" src="assets/photos/past-work/home-gallery-09.jpg" alt="">
-                <img class="gallery-img-frame show-off-img-end" src="assets/photos/past-work/home-gallery-10.jpg" alt="">
+        <section class="hero-section" id="hero-gallery">
+            <div class="hero-headers-container">
+                <h1>Your One-Stop Place For All Things Beauty</h1>
             </div>
-
-            <span class="btn-primary">
-                    <a href="services.html">See The Full Gallery</a>
-                </span>
         </section>
 
+        <section>
+
+            <div class="gallery-container gallery-left-large">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00007.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00032.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00033.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00034.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00035.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00036.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00037.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00038.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00039.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00040.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00041.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00042.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00043.webp" alt="">
+            </div>
+
+
+        </section>
+
+        <section>
+
+            <div class="gallery-container gallery-right-large">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00044.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00045.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00046.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00047.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00048.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00049.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00050.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00051.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00052.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00053.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00054.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00055.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00056.webp" alt="">
+            </div>
+        </section>
+
+        <section>
+
+            <div class="gallery-container gallery-left-large">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00058.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00057.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00059.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00060.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00061.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00062.webp" alt="">
+                <img class="gallery-img-frame" src="assets/photos/past-work-optimized/service-image-00063.webp" alt="">
+
+            </div>
+        </section>
+
+        <section>
+            <h4>Get In Touch</h4>
+            <h1>Conveniently Located Inside El Rio Barber Stylist</h1>
+
+            <div class="contact-us-container">
+                <div class="map-embed">
+                    <div class="iframe-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1542.0203396831364!2d-110.9925340596437!3d32.2353053084472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d671315145d619%3A0x7f3869fa6ad62b42!2s1299%20W%20Speedway%20Blvd%2C%20Tucson%2C%20AZ%2085745!5e0!3m2!1sen!2sus!4v1670911112876!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="contact-us-btn-group">
+                <span class="btn-primary-icon">
+                    <img src="assets/icons/call_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    <a href="tel:520-440-6118">Call Us (520) 440-6118</a>
+                </span>
+                    <span class="btn-primary-icon">
+                    <img src="assets/icons/directions_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    <a href="https://goo.gl/maps/sCqsgdYvBWM6nLwW8" target="_blank">Get Directions</a>
+                </span>
+                    <span class="btn-primary-icon">
+                    <img src="assets/icons/book_online_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    <a href="https://moncheribook.square.site/" target="_blank">Book Online</a>
+                </span>
+                </div>
+            </div>
+        </section>
 
         <footer-component></footer-component>
+        <script type="text/javascript" src="components/header/mobile-menu-helper.js"></script>
 
     </body>
 </html>
