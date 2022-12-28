@@ -454,13 +454,6 @@
 
     }
 
-    /*.gallery-container img:nth-of-type(10n) {*/
-    /*    grid-column: 3 / span 2;*/
-    /*    grid-row: 3 / span 2;*/
-    /*    width: 100%;*/
-    /*    height: 420px;*/
-    /*}*/
-
     @media (max-width: 900px) {
         .gallery-container img {
             height: 125px;
