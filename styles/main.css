@@ -152,6 +152,7 @@
             background: var(--primary-brand-color-dark) url(/assets/photos/hero-images-optimized/home.webp);
             background-size: cover;
             background-position: center;
+            min-height: 350px;
         }
 
         #hero-services {
