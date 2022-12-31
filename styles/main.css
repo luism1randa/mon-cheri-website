@@ -130,6 +130,7 @@
 
         .hero-headers-container{
             margin: 10px auto;
+            max-width: 800px;
         }
 
         .hero-section h1 {
@@ -332,33 +333,34 @@
     .hero-section .btn-primary-icon {
         height: 40px;
         width: 180px;
-        border-radius: 2px;
 
         box-shadow:
                 rgba(0, 0, 0, 0.12) 0px 1px 23px,
                 rgba(0, 0, 0, 0.24) 0px 1px 22px;
     }
 
-    .hero-section .btn-primary-icon:hover{
-        /*background-color: rgb(255, 235, 158);*/
+    .hero-btns{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-btns .btn-primary-icon:first-child{
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .hero-btns .btn-primary-icon:nth-child(2){
+        margin-left: 0;
+        margin-right: auto;
     }
 
 
+
     /*Small screens styles*/
-    @media screen and (max-width: 500px){
-
-        .hero-buttons{
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-        .btn-hero{
-            margin: 2px auto;
-        }
-
-
+    @media screen and (max-width: 530px){
 
         /*Align booking buttons in the center on smaller screens.*/
         .book-now-btn-group {
@@ -370,6 +372,18 @@
         .book-now-btn-sm{
             min-width: 140px;
         }
+
+        .hero-btns{
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .hero-btns .btn-primary-icon:first-child,
+        .hero-btns .btn-primary-icon:nth-child(2){
+            margin: 10px auto 10px auto;
+        }
+
+
 
     }
 
