@@ -373,17 +373,21 @@
         iphone SE sizes*/
         .book-now-btn-sm{
             width: 100%;
+            height: 50px;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         .hero-btns{
             flex-direction: column;
             gap: 0;
+            margin-top: 35px;
         }
 
         .hero-btns .btn-primary-icon:first-child,
         .hero-btns .btn-primary-icon:nth-child(2){
             margin: 10px auto 10px auto;
-            width: 90%;
+            width: 95%;
         }
 
 
