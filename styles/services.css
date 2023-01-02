@@ -5,8 +5,9 @@
     .service-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        margin: 30px 0;
+        margin: 30px auto;
         grid-gap: 1rem;
+        max-width: 800px;
     }
 
     .service-grid a{
